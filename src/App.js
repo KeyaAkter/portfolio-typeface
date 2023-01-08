@@ -4,7 +4,7 @@ import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
-    <div>
+    <div className="wrapper">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
