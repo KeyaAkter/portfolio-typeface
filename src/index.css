@@ -156,6 +156,7 @@ hr {
   text-transform: uppercase;
   font-weight: 500;
 }
+
 .projects-list-wrapper {
   background-color: var(--color-yellow);
   padding: 6vw 1vw; /* experimental */
@@ -175,6 +176,25 @@ hr {
   justify-content: space-between;
   align-items: flex-end;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.project-item .multiple-title {
+  display: none;
+}
+
+.project-item:hover .project-details,
+.project-item:hover .single-title {
+  display: none;
+}
+
+.project-item:hover .multiple-title {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-style: italic;
+  color: var(--color-light);
 }
 
 .project-item span {
@@ -191,7 +211,7 @@ hr {
   gap: 1rem;
 }
 
-.projects-details {
+.project-details {
   display: flex;
   flex-direction: column;
   text-align: right;
